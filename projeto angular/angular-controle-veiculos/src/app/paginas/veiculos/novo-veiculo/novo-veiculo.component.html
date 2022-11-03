@@ -1,0 +1,63 @@
+<app-card [nomeTela]="nomeTela" [nomeAcao]="nomeAcao"></app-card>
+
+<form>
+
+    <div class="form-group row fundoBranco">
+        <h5>Rastreadores</h5>
+        <hr />
+        <div class="col-md-5">
+            <div class="col-sm-12">
+                <label for="referencia" class="col-sm-12 col-form-label">Dispositicos disponiveis</label>
+                <input class="form-control" id="referencia" placeholder="Pesquise o dispositivo disponível">
+            </div>
+            <div class="col-sm-12">
+                <textarea class="form-control" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <button class="btn btn-primary tamanho-uniforme"> Vincular >> </button>
+            <button class="btn btn-warning tamanho-uniforme"><< Desvincular</button>
+        </div>        
+        <div class="col-md-5">
+            <div class="col-md-12">
+                <div class="col-sm-12">
+                    <label for="referencia" class="col-sm-12 col-form-label">Dispositicos disponiveis</label>
+                    <textarea class="form-control" rows="10"></textarea>
+                </div>
+            </div>
+            <button class="btn btn-info tamanho-uniforme">Configurações de alertas para rastreador SL</button>
+        </div>
+    </div>
+
+
+    <div class="form-group row fundoBranco">
+        <h5>Grupo de Veículos</h5>
+        <hr />
+        <div class="col-md-5">
+            <div class="col-sm-12">
+                <label for="referencia" class="col-sm-12 col-form-label">Grupo de veículos disponíveis</label>
+                <input class="form-control" id="referencia" placeholder="Pesquise o grupo de veículos disponíveis">
+            </div>
+            <div class="col-sm-12">
+                <textarea class="form-control" rows="10"></textarea>
+            </div>
+        </div>
+        <div class="col-md-2 alinharAoCentro">
+            <button class="btn btn-primary tamanho-uniforme">Vincular</button>
+            <button class="btn btn-warning tamanho-uniforme">Desvincular</button>
+        </div>        
+        <div class="col-md-5">
+            <div class="col-md-12">
+                <div class="col-sm-12">
+                    <label for="referencia" class="col-sm-12 col-form-label">Grupos vinculados so veículo</label>
+                    <textarea class="form-control altura-text-area" rows="11"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <button class="btn btn-info">Voltar</button>
+        <button class="btn btn-success bi bi-caret-left-fill toxto-esquerda">Salvar</button>
+        <button class="btn btn-danger toxto-esquerda">Cancelar</button>
+    </div>
+</form>

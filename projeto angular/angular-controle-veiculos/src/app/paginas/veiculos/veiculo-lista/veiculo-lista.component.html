@@ -1,0 +1,40 @@
+<app-card [nomeTela]="nomeTela" [nomeAcao]="nomeAcao"></app-card>
+<table class="table table-striped fundoBranco">
+    <thead>
+        <tr>
+            <th scope="col">Placa</th>
+            <th scope="col">Cliente</th>
+            <th scope="col">Marca</th>
+            <th scope="col">Modelo</th>
+            <th scope="col">Ano</th>
+            <th scope="col">Status</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let country of countries">
+            <th scope="row">{{ country.id | number}}</th>
+            <td>{{ country.cliente }}</td>
+            <td>{{ country.marca }}</td>
+            <td>{{ country.modelo}}</td>
+            <td>{{ country.ano}}</td>
+            <td>{{ country.status}}</td>
+        </tr>
+</tbody>
+</table>
+
+<div class="d-flex justify-content-between p-2 fundoBranco">
+    <ngb-pagination
+    [collectionSize]="collectionSize"
+    [(page)]="page"
+    [pageSize]="pageSize"
+    (pageChange)="refreshCountries()"
+    >
+</ngb-pagination>
+    <!-- 
+    <select class="form-select" style="width: auto" [(ngModel)]="pageSize" (ngModelChange)="refreshCountries()">
+        <option [ngValue]="2">2 items per page</option>
+        <option [ngValue]="4">4 items per page</option>
+        <option [ngValue]="6">6 items per page</option>
+    </select> 
+    -->
+</div>

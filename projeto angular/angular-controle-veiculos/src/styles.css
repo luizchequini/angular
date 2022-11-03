@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    background-color: rgb(234, 234, 234);
+}
+.fundoBranco{
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 15px;
+}
+.toxto-esquerda{
+    float: right;
+    margin: 10px;
+}

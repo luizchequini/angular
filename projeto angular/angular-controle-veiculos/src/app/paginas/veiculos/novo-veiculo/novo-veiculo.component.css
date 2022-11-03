@@ -1,0 +1,12 @@
+.tamanho-uniforme{
+    width: 100%;
+    text-align: center;
+}
+
+.altura-text-area{
+    height: 100%;
+}
+
+.alinharAoCentro{
+    margin: 0 auto;
+}

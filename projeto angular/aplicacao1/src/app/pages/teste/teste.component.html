@@ -1,0 +1,10 @@
+<div class="topo">
+    <div class="menu">
+        <form class="conteudo_form" [formGroup]="mensagemForm" (submit)="submitMensagem()">
+            
+            <input class="input_login" placeholder="Digite o título" formControlName="titulo"/>
+
+            <button class="input-submit" [disabled]="!mensagemForm ? 'disabled' : null">Enviar</button>
+        </form>
+    </div>
+</div>
