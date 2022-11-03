@@ -9,6 +9,9 @@ export class VeiculoComponent implements OnInit {
   
   nomeTela = "DADOS DO VEÍCULO";
   nomeAcao = "VERIFICAR PROXIMO VEÍCULO"
+  enderecoTela = "/veiculo";
+  botao = true;
+
   constructor() { }
 
   ngOnInit(): void {

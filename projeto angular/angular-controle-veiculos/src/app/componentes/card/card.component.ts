@@ -9,6 +9,8 @@ export class CardComponent implements OnInit {
 
   @Input() nomeTela: string = "";
   @Input() nomeAcao: string = "";
+  @Input() enderecoTela: string = "";
+  @Input() botao: boolean = false;
   
   constructor() { }
 

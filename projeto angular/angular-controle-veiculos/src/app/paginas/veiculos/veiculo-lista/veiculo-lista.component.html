@@ -1,4 +1,4 @@
-<app-card [nomeTela]="nomeTela" [nomeAcao]="nomeAcao"></app-card>
+<app-card [nomeTela]="nomeTela" [nomeAcao]="nomeAcao" [enderecoTela]="enderecoTela" [botao]="botao"></app-card>
 <table class="table table-striped fundoBranco">
     <thead>
         <tr>
@@ -8,6 +8,7 @@
             <th scope="col">Modelo</th>
             <th scope="col">Ano</th>
             <th scope="col">Status</th>
+            <th>Ação</th>
         </tr>
     </thead>
     <tbody>
@@ -18,6 +19,11 @@
             <td>{{ country.modelo}}</td>
             <td>{{ country.ano}}</td>
             <td>{{ country.status}}</td>
+            <td>    
+                <a routerLink="/veiculos">
+                    <button type="button" class="btn btn-info" style="float: right;">VERIFICAR</button>
+                </a>
+            </td>
         </tr>
 </tbody>
 </table>

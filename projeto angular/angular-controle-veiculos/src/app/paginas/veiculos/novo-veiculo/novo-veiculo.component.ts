@@ -8,6 +8,9 @@ import { Component, OnInit } from '@angular/core';
 export class NovoVeiculoComponent implements OnInit {
   nomeTela = "NOVO VEÍCULO";
   nomeAcao = "NOVO CADASTRO";
+  enderecoTela = "";
+  botao = false;
+  
   constructor() { }
 
   ngOnInit(): void {

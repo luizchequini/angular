@@ -1,4 +1,4 @@
-<app-card [nomeTela]="nomeTela" [nomeAcao]="nomeAcao"></app-card>
+<app-card [nomeTela]="nomeTela" [nomeAcao]="nomeAcao" [enderecoTela]="enderecoTela"></app-card>
 
 <form>
 
@@ -56,7 +56,9 @@
         </div>
     </div>
     <div>
-        <button class="btn btn-info">Voltar</button>
+        <a routerLink="/lista-veiculos">
+            <button class="btn btn-info">Voltar</button>
+        </a>
         <button class="btn btn-success bi bi-caret-left-fill toxto-esquerda">Salvar</button>
         <button class="btn btn-danger toxto-esquerda">Cancelar</button>
     </div>

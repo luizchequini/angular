@@ -115,7 +115,9 @@ export class VeiculoListaComponent implements OnInit {
 	countries!: Country[];
 	nomeTela = "LISTA DE VEÍCULOS";
 	nomeAcao = "NOVO CADASTRO";
-
+	enderecoTela = "/novo-veiculo";
+	botao = true;
+	
   constructor() { }
 
   ngOnInit(): void {
